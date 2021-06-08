@@ -12,8 +12,6 @@ pageEncoding="UTF-8"%>
 	Hello world!
 </h1>
 
-
-
-디비 : ${seq}
+	디비 : ${seq}
 </body>
 </html>
