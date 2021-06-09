@@ -1,9 +1,8 @@
 package com.test.Mybatis;
 
-
-
+import java.util.List;
 
 public interface IService {
 
-	int seq();
+	List<DTO> seq();
 }

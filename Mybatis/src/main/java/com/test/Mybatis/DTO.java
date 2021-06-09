@@ -1,13 +1,17 @@
 package com.test.Mybatis;
 
 public class DTO {
-	private int seq;
+	private String seq;
+	public DTO(String seq) {
+        super();
+        this.seq = seq;
 
-	public int getSeq() {
+    }
+	public String getSeq() {
 		return seq;
 	}
 
-	public void setSeq(int seq) {
+	public void setSeq(String seq) {
 		this.seq = seq;
 	}
 }

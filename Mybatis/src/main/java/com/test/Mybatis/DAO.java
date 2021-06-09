@@ -1,5 +1,8 @@
 package com.test.Mybatis;
 
+import java.util.List;
+
+import org.apache.ibatis.session.SqlSession;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -7,11 +10,11 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class DAO {
 	@Autowired
-	private SqlSessionTemplate template; 
-	public int daoseq() {
+	SqlSession sql;
+	public List<DTO> daoseq() {
 		
-		int result =template.selectOne("Test.seq");
-		System.out.println("DAO" + result);
+		List<DTO> result =sql.selectList("test.seq");
+		
 		return result;
 	}
 
